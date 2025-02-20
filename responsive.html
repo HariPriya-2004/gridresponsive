@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+             /* background-color: rgb(80, 80, 154); */
+             background: #4b6cb7;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #182848, #4b6cb7);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            overflow:scroll;
+        }
+        .boxes{
+           display:grid;
+           grid-template-columns: 200px 100px 300px 200px 100px 100px 200px;
+           grid-template-rows: 150px 150px 150px;
+           
+        }
+         .box{
+            background-color: white;
+           margin:5px;
+           color: white;
+           border-radius: 10px;
+          
+          
+         }
+         .box1{
+            background: #0052D4;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            grid-area: 1/1/2/3;
+            display:flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+            
+         }
+         .box2{
+            background: #fc4a1a;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f7b733, #fc4a1a);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+            grid-area: 1/3/2/6; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 15px;
+            padding:10px;
+           
+         }
+         
+         .csk{
+           width:100px;
+           height:200px;
+        
+           
+         } 
+        
+         
+         .box3{
+            background: #0052D4;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+            grid-area: 1/6/2/8;
+            display:flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+            
+         }
+         
+         
+         .box4{
+            background: #f85032;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #e73827, #f85032);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #e73827, #f85032);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+           
+            grid-area: 2/1/3/4;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+            .btn{
+                padding:5px;
+                font-size: 15px;
+                font-weight: 600;
+                color:#D38312;
+                outline:none;
+                border:none;
+                margin-bottom: 5px;
+            }
+            .v{
+                font-size: 17px;
+            }
+            .no{
+                font-size:10px;
+                margin-left: 50px;
+            }
+            .virat{
+                margin-right: 50px;
+                width: 140px;
+            }
+            
+            .left{
+                display:flex;
+                align-items: center;
+                text-align: left;
+            }
+            .para{
+                font-size:10px;
+            }
+            
+
+         
+         .box5{
+            background: #56CCF2;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2F80ED, #56CCF2);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            grid-area: 2/4/3/8;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+         }
+        
+         .pat{
+            margin-right: 50px;
+                width: 140px;
+         }
+         .btnn{
+                padding:5px;
+                font-size: 13px;
+                color:rgb(0, 149, 255);
+                outline:none;
+                border:none;
+                font-weight: 600;
+              
+         }
+         .hyd{
+            font-size: 20px;
+            margin-top:5px;
+            
+       }
+       .b{
+        font-size: 10px;
+       }
+       .points{
+        font-size: 25px;
+        margin-left: 20px;
+        font-weight: 500;
+       }
+         .box6{
+            background: #373B44;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4286f4, #373B44);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            grid-area: 3/1/4/2;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color:white;
+
+           
+         }
+         .box7{
+            background: #D38312;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #A83279, #D38312);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #A83279, #D38312);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            grid-area: 3/2/4/5;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+           flex-direction: column;
+          
+         }
+         .fact{
+           font-size: 20px;
+           font-weight: 800;
+         }
+         .kolkata{
+         margin-top:10px;
+         margin-bottom: 3px;
+         }
+        
+
+         .box8{
+            background: #ff00cc;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #333399, #ff00cc);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            grid-area: 3/5/4/7;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+           flex-direction: column;
+
+         }
+         .box9{
+            background: #ff00cc;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #333399, #ff00cc);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            grid-area: 3/7/4/8;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         }
+         .image{
+            font-size: 45px;
+            margin:10px;
+         }
+         @media(max-width: 1200px){
+            .boxes{
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px;
+         }
+         .box{
+            flex-direction: column;
+         }
+         .box1{
+            grid-area: 1/1/2/2;
+         }
+
+         
+         .box2{
+            grid-area: 1/2/2/3;
+            padding:10px;
+         }
+         
+         .box3{
+            grid-area: 1/3/2/4;
+
+         }
+         .box4{
+            grid-area: 2/1/3/2;
+         }
+         .left{
+           width:50%;
+           height:35%;
+
+         }
+         .virat{
+            width: 80px;
+            height:80px;
+            margin-bottom: 15px;
+            
+         }
+         .btn{
+            font-size: 8px;
+         }
+         .box5{
+            grid-area: 2/2/3/3;
+            padding: 10px;
+         }
+         .pat{
+            width: 90px;
+            height:90px;
+         }
+         .btnn{
+            font-size: 10px;
+         }
+         .box6{
+            grid-area: 2/3/3/4;
+         }
+         .box7{
+          grid-area:  3/1/4/2;
+          font-size: 16px;
+          padding: 10px;
+         }  
+         .box8{
+            grid-area: 3/2/4/3;
+         }
+         .box9{
+            grid-area: 3/3/4/4;
+         }
+
+        }
+        @media(max-width: 700px){
+            .container{
+                height:140vh;
+            }
+           .boxes{
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 200px 200px 200px 200px;
+           }
+           .box{
+            flex-direction: column;
+         }
+         .box1{
+            grid-area: 1/1/2/2;
+         }
+
+         
+         .box2{
+            grid-area: 1/2/2/3;
+            
+
+           }
+           .box3{
+            grid-area: 2/1/3/2;
+           }
+           .box4{
+            grid-area: 2/2/3/3;
+           }
+           .box5{
+            grid-area: 3/1/4/2;
+           }
+           .box6{
+            grid-area: 3/2/4/3;
+           }
+           .box7{
+            grid-area: 4/1/5/2;
+           }
+          .box8{
+            grid-area: 4/2/5/3;
+          }
+          .box9{
+            grid-area: 4/2/5/3;
+          }
+        }
+         
+
+         
+      
+       
+      
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes">
+            <div class="box box1">
+                <h1>1260</h1>
+                <p>Sixes</p>
+            </div>
+            <div class="box box2">
+               
+                <h3 class="winner">Winners</h3>
+                <h2><b>CHENNAI SUPER KINGS</b></h2>
+            
+            
+                <img src="Csk.png" class="csk">
+            
+            </div>
+            <div class="box box3">
+                <h1>14</h1>
+                <p>Hundreds</p>
+            </div>
+            <div class="box box4">
+                <div class="left">
+                       <img src="virat.png.avif" class="virat" alt="">
+                </div>
+                <div class="right">
+                    <button class="btn">Orange Cap</button>
+                    <h6 class="v">Virat Kohli</h6>
+                    <b class="para">Total Runs</b><b class="no">741</b><br>
+                    <b class="para">Strike Rate</b><b class="no">154.7</b><br>
+                    <b class="para">Matches play</b><b class="no">15</b><br>
+                </div>
+
+            </div>
+            <div class="box box5">
+                <div class="left">
+                    <img src="pat.png.avif" class="pat" alt="">
+                </div>
+                <div class="right">
+                <button class="btnn">FairPlay</button>
+                <h6 class="hyd">Sunrisers Hyderabad</h6>
+                <b class="b">Points</b><b class="points">173</b>
+                </div>
+               </div>
+
+            <div class="box box6">
+                <i class="fa-solid fa-image image"></i>
+                <p>Pics</p>
+            </div>
+            <div class="box box7">
+                <h8><b class="fact">Interesting Facts</b></h8>
+                <p class="kolkata">"Kolkata Knight Riders crowned champions for the third time,</p>
+                    <p class="rider">having previously won in the 2012 , 2014"</p>
+            </div>
+            <div class="box box8">
+                <i class="fa-regular fa-file-lines image"></i>
+                <p>Match Reports</p>
+            </div>
+            <div class="box box9">
+                <i class="fa-regular fa-circle-play image"></i>
+               <p>Highlights</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
